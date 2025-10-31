@@ -16,8 +16,8 @@ export default function ServicesSection() {
                         <div className="text-primary mb-3 text-3xl max-h-80px">
                             <Image src={`/images/home/services/${s.icon}`} alt={s.title} width={40} height={40}/>
                         </div>
-                        <h3 className="text-lg font-semibold">{s.title}</h3>
-                        <p className="mt-2 text-sm opacity-80">{s.desc}</p>
+                        <h3 className="text-lg font-semibold dark:text-[#000000]">{s.title}</h3>
+                        <p className="mt-2 text-sm opacity-80 dark:text-[#000000]">{s.desc}</p>
                     </div>
                 ))}
             </div>
