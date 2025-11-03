@@ -12,7 +12,7 @@ export default function HomePage() {
         <div className="w-full flex flex-col items-center">
             <Header/>
 
-            <div className="max-w-[1412px]">
+            <div className="max-w-[1452px] px-5">
                 <HeroSection/>
                 <AboutSection/>
                 <ServicesSection/>
