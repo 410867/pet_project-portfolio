@@ -9,10 +9,10 @@ import Footer from "@/components/Footer";
 
 export default function HomePage() {
     return (
-        <>
+        <div className="w-full flex flex-col items-center">
             <Header/>
 
-            <div className="px-5">
+            <div className="max-w-[1412px]">
                 <HeroSection/>
                 <AboutSection/>
                 <ServicesSection/>
@@ -22,6 +22,6 @@ export default function HomePage() {
             </div>
 
             <Footer/>
-        </>
+        </div>
     );
 }
