@@ -1,14 +1,15 @@
 import Section from "@/components/Section";
 import {services} from "@/data";
 import Image from "next/image";
+import {Service} from "@/types/content";
 
 export default function ServicesSection() {
     const subtitle = "Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante.";
 
     return (
         <Section id="services" title="Services" subtitle={subtitle}>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {services.map((s) => (
+            <div className="flex flex-wrap justify-center gap-8">
+                {services.map((s: Service) => (
                     <div
                         key={s.title}
                         className="rounded-2xl bg-[#F3F3F3] p-6 w-[330px]"

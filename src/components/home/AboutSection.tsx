@@ -1,8 +1,13 @@
 import Image from "next/image";
 import SkillBar from "@/components/home/SkillBar";
 
+type Skill = {
+    label: string;
+    value: number;
+};
+
 export default function AboutSection() {
-    const skills = [
+    const skills: Skill[] = [
         {label: "UX", value: 100},
         {label: "Website Design", value: 92},
         {label: "App Design", value: 86},
@@ -28,7 +33,7 @@ export default function AboutSection() {
                             consectetur lacus
                         </p>
                     </div>
-                    {skills.map((s) => (
+                    {skills.map((s: Skill) => (
                         <SkillBar key={s.label} label={s.label} value={s.value}/>
                     ))}
                 </div>
